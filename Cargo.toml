@@ -1,0 +1,12 @@
+[package]
+name = "rust_nas"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# ... your other dependencies ...
+burn = { version = "0.15", features = ["train", "wgpu", "vision", "dataset"] }
+serde = { version = "1.0", features = ["derive"] }
+rayon = "1.8"
+rand = "0.8"
+bincode = { version = "=2.0.0-rc.3", features = ["serde"] }
